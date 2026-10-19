@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Chúc mừng 20/10</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600&family=Pacifico&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Góc trên bên phải: bài đang phát + nút bật/tắt nhạc -->
+<div id="player">
+  <div id="now" aria-live="polite">
+    <span class="eq" aria-hidden="true"><i></i><i></i><i></i></span>
+    <span class="meta">
+      <span id="nowLabel">Nhạc chờ</span>
+      <span id="nowTitle">Đang tải...</span>
+    </span>
+  </div>
+  <button id="mute" type="button" aria-label="Bật/tắt nhạc">🔊</button>
+</div>
+
+<main class="card" id="card">
+  <h1>Chúc mừng 20/10</h1>
+  <p id="intro">Có một món quà bí mật dành cho bạn. Bấm vào nút bên dưới để mở nhé!</p>
+  <button id="gift" type="button">Mở quà ngay 🎁</button>
+
+  <div id="msg" aria-live="polite"><p id="typed"></p></div>
+  <div id="letters"></div>
+</main>
+
+<audio id="bgm" loop preload="auto"></audio>
+
+<script src="script.js"></script>
+</body>
+</html>
